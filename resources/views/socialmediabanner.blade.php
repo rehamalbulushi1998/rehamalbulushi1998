@@ -1,7 +1,7 @@
 <section class="fh5co-social">
 		<div class="site-container">
 			<div class="social">
-				<h5>Follow me!!</h5>
+				<h5>Follow us!!</h5>
 				<div class="social-icons">
 					<a href="#" target="_blank"><img src="./images/social-twitter.png" alt="social icon"></a>
 					<a href="#" target="_blank"><img src="./images/social-pinterest.png" alt="social icon"></a>
