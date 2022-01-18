@@ -4,7 +4,6 @@
 				<h5>Follow us!!</h5>
 				<div class="social-icons">
 					<a href="#" target="_blank"><img src="./images/social-twitter.png" alt="social icon"></a>
-					<a href="#" target="_blank"><img src="./images/social-pinterest.png" alt="social icon"></a>
 					<a href="#" target="_blank"><img src="./images/social-youtube.png" alt="social icon"></a>
 					<a href="#" target="_blank"><img src="./images/social-twitter.png" alt="social icon"></a>
 				</div>

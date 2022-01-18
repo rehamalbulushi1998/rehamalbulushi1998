@@ -36,7 +36,7 @@
 <body>
 
 	<!-- Navigation -->
-	<nav>@include('navbar')</nav>
+	<nav>@include('layouts.navbar')</nav>
 	
 	<!-- Navigation end -->
 
@@ -122,11 +122,11 @@
 	<!-- Quotes end -->
 
 	<!-- Social -->
-@include('socialmediabanner')
+@include('layouts.socialmediabanner')
 	<!-- Social -->
 
 	<!-- Footer -->
-@include('footer')
+@include('layouts.footer')
 	<!-- Footer end -->
 
 	<!-- Scripts -->
