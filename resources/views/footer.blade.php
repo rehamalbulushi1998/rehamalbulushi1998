@@ -18,7 +18,7 @@
 		</div>
 		<div class="footer-bottom">
 			<div class="site-container footer-bottom-inner">
-				<p>© 2019 Author | Design by <a href="https://freehtml5.co/" target="_blank">freehtml5.co</a> | All rights Reserved.</p>
+				<p>© 2022 E-INK| All rights Reserved.</p>
 			</div>
 		</div>
 	</footer>
