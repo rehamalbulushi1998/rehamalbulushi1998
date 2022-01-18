@@ -19,6 +19,10 @@ Route::get('/home', [HomeController::class, "index"]);
 Route::get('/', function () {
     return view('home');
 });
+Route::get('test', function () {
+    abort(500);
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
