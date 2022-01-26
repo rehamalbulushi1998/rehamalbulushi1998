@@ -29,7 +29,7 @@ class PostController extends Controller
         $post->user_id = Auth::id();
         $post->title = $request->input('title');
         $post->desciption = $request->input('desc');
-        
+        $post->category_id = $request->input('category_id');
         $file = $request->file('file');
         $path = Storage::disk('public')->putFile('/', $file);
         $post->img = $path;
