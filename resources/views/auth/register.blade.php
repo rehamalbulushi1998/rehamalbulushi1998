@@ -16,23 +16,23 @@
             <div>
                 <x-label for="name" :value="__('Name')" />
 
-                <x-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus />
+                <x-input id="name"  class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus />
             </div>
 
             <!-- User Name -->
             <div>
-                <x-label for="user_name" :value="__('User_Name')" />
+                <x-label for="user_name" :value="__('User Name')" />
 
                 <x-input id="user_name" class="block mt-1 w-full" type="text" name="user_name" :value="old('user_name')" required autofocus />
             </div>
             <!-- User Type -->
             <div>
-                <x-label for="user_type" :value="__('Register as:')" />
+                <x-label for="user_type" :value="__('Register as')" />
 
                 <select id="user_type" class="block mt-1 w-full rounded-md shadow-sm border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" type="text" name="user_type" :value="old('user_type')" required autofocus>
-                    <option value="author">Author</option>
-                    <option value="reader">Reader</option>
-                <select>
+                    <option value="author">author</option>
+                    <option value="reader">reader</option>
+                </select>
             </div>
 
             <!-- Email Address -->
