@@ -1,6 +1,9 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PostController;
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\Auth\RegisteredUserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,16 +19,16 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', [HomeController::class, "index"]);
+Route::get('createpost', [PostController::class,'create'])->name('createpost');
+Route::get('/myposts', [PostController::class,'userpost'])->name('myposts');
 
-//Route::get('/', function () {
-  //  return view('home');
-//});
 Route::get('test', function () {
-    abort(500);
+    abort(403);
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+Route::get('dashboard', [ProfileController::class,'edit'])->middleware(['auth'])->name('dashboard');
+Route::patch('/{user}/update', [ProfileController::class,'update'])->middleware(['auth'])->name('users.update');
+Route::patch('/store', [PostController::class,'store'])->middleware(['auth'])->name('posts.store');
+
 
 require __DIR__.'/auth.php';
