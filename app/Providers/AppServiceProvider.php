@@ -1,7 +1,8 @@
 <?php
 
 namespace App\Providers;
-
+use Spatie\Health\Facades\Health;
+use Spatie\Health\Checks\Checks\UsedDiskSpaceCheck;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -23,6 +24,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        //Health::checks([
+        //    UsedDiskSpaceCheck::new()
+            //    ->warnWhenUsedSpaceIsAbovePercentage(70)
+              //  ->failWhenUsedSpaceIsAbovePercentage(90),
+       // ]);
     }
 }
