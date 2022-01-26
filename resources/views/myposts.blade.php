@@ -15,7 +15,7 @@
                         <strong>{{ $post->title }}</strong>
                         <h5>{{ $post->user_id }} , {{ $post->created_at }}</h5>
                         <div>
-                            <img src="{{ asset('storage/$post->img') }}"/>
+                            <img src="/storage/{{ $post->img }}"/>
                         </div>
                         <p>{{ $post->desciption }}</p>
                     </div>
