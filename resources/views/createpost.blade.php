@@ -26,7 +26,7 @@
                         <input style=" width: 100%; padding: 16px 20px;  border: none; border-radius: 4px; background-color: #f1f1f1;" type="text" name="title"  placeholder="post title"/> 
                         <label for="category_id" for="" style="font-weight:bold;  color:#333">Post category</label>
                         <select name="category_id" class="block mt-1 w-full rounded-md shadow-sm border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" type="text" autofocus>
-                            @foreach ($categories as $category)
+                            @foreach ($category as $categories)
                             <option value='{{$categories->id}}'>{{$categories->title}}</option>
                             @endforeach
                         </select>
