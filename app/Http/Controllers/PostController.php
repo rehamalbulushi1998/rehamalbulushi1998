@@ -13,10 +13,10 @@ use Illuminate\Support\Facades\Auth;
 
 class PostController extends Controller
 {
-    public function index()
+    public function blog()
     {
 
-        $post = Post::with(['category', 'user']);
+        $post = Post::all();
         return view('blogs')->with('post', $post);
         
     }
