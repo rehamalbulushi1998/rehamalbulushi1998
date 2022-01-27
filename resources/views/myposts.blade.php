@@ -3,7 +3,7 @@
   <style>
       .frame {
         width: 390px;
-        height: 390px;
+        height: 340px;
         border: 3px solid #ccc;
         background: #eee;
         margin: auto;
