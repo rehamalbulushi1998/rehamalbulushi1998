@@ -2,8 +2,8 @@
   <head>
   <style>
       .frame {
-        width: 300px;
-        height: 250px;
+        width: 500px;
+        height: 450px;
         border: 3px solid #ccc;
         background: #eee;
         margin: auto;
