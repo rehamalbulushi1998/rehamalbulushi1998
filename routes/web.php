@@ -32,6 +32,10 @@ Route::get('dashboard', [ProfileController::class,'edit'])->name('dashboard');
 Route::patch('/{user}/update', [ProfileController::class,'update'])->middleware(['auth'])->name('users.update');
 Route::patch('/store', [PostController::class,'store'])->middleware(['auth'])->name('posts.store');
 Route::patch('/categorystore', [CategoryController::class,'store'])->name('category.store');
+Route::get('/{id}/editpost', [PostController::class,'edit'])->middleware(['auth']);
+Route::post('/{post}/update', [PostController::class,'update'])->middleware(['auth'])->name('posts.update');
+Route::post('/{post}/destroy', [PostController::class,'destroy'])->middleware(['auth'])->name('posts.destroy');
+Route::get('/{id}/deletepost', [PostController::class,'delete'])->middleware(['auth']);
 
 
 require __DIR__.'/auth.php';

@@ -46,5 +46,45 @@ class PostController extends Controller
         } else {
             abort(403);
         }
+
+    }
+    public function edit($id)
+
+    {
+        $post = Post::find($id);
+
+        return view('editpost', ["post" => $post]);
+    }
+
+
+    public function update(Request $request, $id)
+    {
+        $post = Post::find($id);
+       
+        $post->title = $request->input('title');
+        $post->category_id = $request->input('category_id');
+        $post->desciption = $request->input('desc');
+        $post->save();
+        return redirect('myposts')->withSuccess('Post updated successfully!');
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  \App\Models\Books  $books
+     * @return \Illuminate\Http\Response
+     */
+    public function delete(Post $post, $id)
+    {
+        $post = Post::find($id);
+        return view('deletepost')->with('post', $post);
+    }
+
+    public function destroy(Request $request, $id)
+    {
+       
+        $post = Post::find($id);
+        $post->delete();
+        return redirect('myposts')->withSuccess('Post deleted successfully!');  
     }
 }
