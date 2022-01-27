@@ -27,7 +27,7 @@ Route::get('/myposts', [PostController::class,'userpost'])->name('myposts');
 Route::get('test', function () {
     abort(403);
 });
-Route::get('/blogs', [PostController::class,'index'])->name('blogs');
+Route::get('/blogs', [PostController::class,'blog'])->name('/blogs');
 Route::get('dashboard', [ProfileController::class,'edit'])->name('dashboard');
 Route::patch('/{user}/update', [ProfileController::class,'update'])->middleware(['auth'])->name('users.update');
 Route::patch('/store', [PostController::class,'store'])->middleware(['auth'])->name('posts.store');
