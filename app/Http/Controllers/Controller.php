@@ -10,4 +10,20 @@ use Illuminate\Routing\Controller as BaseController;
 class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
+
+
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+  
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  \App\Models\Authors  $authors
+     * @return \Illuminate\Http\Response
+     */
+   
 }
+
