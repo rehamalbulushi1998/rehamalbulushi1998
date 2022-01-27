@@ -28,8 +28,9 @@
                         <select name="category_id" required class="block mt-1 w-full rounded-md shadow-sm border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" type="text" autofocus>
                         @foreach ($category as $category)
                         <option value='{{$category->id}}'>{{$category->title}}</option>
-                        </select>
                         @endforeach
+                    </select>
+                        
                         <label for="desc" style="font-weight:bold; color:#333">Description</label>
                         <textarea required style="width: 100%; height: 100px; padding: 16px 20px; border: none; border-radius: 4px; background-color: #f1f1f1;" name="desc" type="text" placeholder="Your user name"></textarea>
                         <label for="file" style="font-weight:bold; color:#333">Add an image</label>
