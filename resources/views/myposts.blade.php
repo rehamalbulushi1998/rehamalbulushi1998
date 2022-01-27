@@ -1,3 +1,20 @@
+<html>
+  <head>
+  <style>
+      .frame {
+        width: 300px;
+        height: 250px;
+        border: 3px solid #ccc;
+        background: #eee;
+        margin: auto;
+        padding: 15px 10px;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
@@ -17,7 +34,7 @@
 
                         <strong>{{ $post->title }}</strong>
                         <h5> {{ $post->created_at }}</h5>
-                        <div>
+                        <div class="frame">
                             <img src="/storage/{{ $post->img }}" />
                         </div>
                         <p>{{ $post->desciption }}</p>
@@ -33,3 +50,4 @@
         </div>
     </div>
 </x-app-layout>
+</html>
