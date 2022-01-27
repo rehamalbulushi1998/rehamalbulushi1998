@@ -2,7 +2,7 @@
   <head>
   <style>
       .frame {
-        width: 375px;
+        width: 390px;
         height: 400px;
         border: 3px solid #ccc;
         background: #eee;
