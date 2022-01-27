@@ -2,8 +2,8 @@
   <head>
   <style>
       .frame {
-        width: 500px;
-        height: 450px;
+        width: 375px;
+        height: 425px;
         border: 3px solid #ccc;
         background: #eee;
         margin: auto;
@@ -11,7 +11,7 @@
       }
       img {
         width: 100%;
-        height: 50%;
+        height: 100%;
       }
     </style>
   </head>
