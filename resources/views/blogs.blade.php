@@ -19,48 +19,40 @@
                 font-family: 'Nunito', sans-serif;
          
             }
-			@media (max-width: 730px) {
-
-#visible {
-
-  display: none;
-
-}
-
-
-
-}
 
         </style>
 </head>
-<body>
-
-	<!-- Navigation -->
+    <!-- Navigation -->
 	<nav>@include('layouts.navbar')</nav>
 	
 	<!-- Navigation end -->
 
-	<!-- Top banner -->
-	<section class="fh5co-top-banner">
-		<div class="top-banner__inner site-container">
-	
-			<div class="top-banner__text">
-				<div class="top-banner__text-up">
-					<span id="visible" class="brand-span">Welcom</span>
-					<span id="visible" class="brand-span2">To...</span>
-					<h2 id="visible" style="margin-left:170%;" class="top-banner__h2">E-INK</h2>
+	<!-- Blog -->
+	<section class="fh5co-blog">
+		<div class="site-container">
+			<h2 class="universal-h2 universal-h2-bckg">Blogs</h2>
+		
+			<div class="blog-slider blog-inner">
+					
+				<div class="single-blog">
+				@foreach ($post as $post)
+					<div class="single-blog__img">
+						<img src="/storage/{{ $post->img }}">
+					</div>
+					<div class="single-blog__text">
+						<h4>{{ $post->title }}</h4>
+						<span>{{ $post->user->name }}, {{ $post->catogary->title }}, {{ $post->created_at }}</span>
+						<p>{{ $post->desciption }}</p>
+					</div>
+						@endforeach
 				</div>
-			
-				<a href="/register" id="visible" class="brand-button">Get Started</a>
 			</div>
+		
 		</div>
 	</section>
-	<!-- Top banner end -->
-
-
-
-	<!-- Scripts -->
-	<script src="js/jquery.min.js"></script>
+	<!--  Blog end -->
+		<!-- Scripts -->
+		<script src="js/jquery.min.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="js/main.js"></script>
 

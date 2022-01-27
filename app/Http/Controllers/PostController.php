@@ -13,6 +13,13 @@ use Illuminate\Support\Facades\Auth;
 
 class PostController extends Controller
 {
+    public function index()
+    {
+
+        $post = Post::with(['category', 'user']);
+        return view('blogs')->with('post', $post);
+        
+    }
     public function create()
     {
         $category = Category::all();

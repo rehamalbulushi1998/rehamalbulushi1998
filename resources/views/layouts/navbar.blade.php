@@ -7,7 +7,7 @@
 		
 		<li><a href="/login">Login</a></li>
 		<li><a href="/register">Sign up</a></li>
-		<li><a href="/">Blogs</a></li>
+		<li><a href="/blogs">Blogs</a></li>
 		<li><a href="/">Home</a></li>
 	</ul>
 </div>
