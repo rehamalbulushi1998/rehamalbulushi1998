@@ -29,6 +29,7 @@
                         @foreach ($category as $category)
                         <option value='{{$category->id}}'>{{$category->title}}</option>
                         </select>
+                        @endforeach
                         <label for="desc" style="font-weight:bold; color:#333">Description</label>
                         <textarea required style="width: 100%; height: 100px; padding: 16px 20px; border: none; border-radius: 4px; background-color: #f1f1f1;" name="desc" type="text" placeholder="Your user name"></textarea>
                         <label for="file" style="font-weight:bold; color:#333">Add an image</label>
