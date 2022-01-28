@@ -51,8 +51,9 @@
 					</div>
 					<div class="single-blog__text">
 						<h4>{{ $post->title }}</h4>
-						<span>{{ $post->user->user_name }}, {{ $post->category->title }}, {{ $post->created_at }}</span>
-						<p>{{ $post->desciption }}</p>
+						<span>{{ $post->user->user_name }}, {{ $post->created_at }}</span>
+						<span>Category: {{ $post->category->title }}</span>
+						<p>{{ $post->desciption }}</p>, 
 					</div>
 				</div>
 				
