@@ -16,7 +16,7 @@ class PostController extends Controller
     public function blog(Post $post)
     {
 
-        $post = Post::with(['category', 'user']);
+        $post = Post::with(['category', 'user'])->get();
         return view('blogs')->with('post', $post);
         
     }
