@@ -36,14 +36,14 @@
 					
 				<div class="single-blog">
 				@foreach ($post as $post)
-					<div class="single-blog__img">
+					
 						<img src="/storage/{{ $post->img }}">
-					</div>
-					<div class="single-blog__text">
+					
+					
 						<h4>{{ $post->title }}</h4>
 						<span>{{ $post->user->name }}, {{ $post->catogary->title }}, {{ $post->created_at }}</span>
 						<p>{{ $post->desciption }}</p>
-					</div>
+					
 						@endforeach
 				</div>
 			</div>
