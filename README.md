@@ -45,8 +45,3 @@ npm install && npm run dev
 ```
 Note that if your application is working along with docker, then the php must be with ./vendor/bin/sail while installing the app.
 
-## Some pictures of the project
-
-<img src="public/images/Capture.png"/>
-
-<img src="public/images/Capture2.png"/>
