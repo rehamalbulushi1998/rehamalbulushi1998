@@ -43,5 +43,5 @@ Install npm dependencies and compile assets
 ```
 npm install && npm run dev
 ```
-Note that if your application is working along with docker, then the php must be with ./vendor/bin/sail while installing the app.
+Note that if your application is working along with docker, then the php must be replaced with ./vendor/bin/sail while installing the app.
 
